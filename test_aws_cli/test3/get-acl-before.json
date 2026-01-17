@@ -1,0 +1,16 @@
+{
+    "Owner": {
+        "DisplayName": "2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09",
+        "ID": "2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09"
+    },
+    "Grants": [
+        {
+            "Grantee": {
+                "DisplayName": "2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09",
+                "ID": "2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "FULL_CONTROL"
+        }
+    ]
+}
