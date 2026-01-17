@@ -59,6 +59,7 @@ tofu is able to create a plan and apply it.
 ### But does the acl work ?
 
 aws s3 ls s3://test-bucket-acl/
+
 ⇒ 403: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
 
 
@@ -80,6 +81,7 @@ GRANTEE                               PERMISSION
 ```
 
 But from now on, we can no longer use tofo/terraform to manager the bucket.
+
 Even though the scw CLI can still change the acl ...
 
 Error: error updating object bucket ACL (fr-par/test-bucket-acl): 
@@ -109,7 +111,7 @@ GRANTEE                               PERMISSION
 
 But this is not what we want: now all users can read the bucket.
 
-## now we remobe the acl from the terraform config and try again
+## now we remoce the acl from the terraform config and try again
 
 ```
 ╷
@@ -118,7 +120,9 @@ But this is not what we want: now all users can read the bucket.
 │ Deleting Object Bucket ACL resource resets the bucket's ACL to its default value: private.
 │ If you wish to set it to something else, you should recreate a Bucket ACL resource with the `acl` field filled accordingly.
 ```
+                
+Very funny, not.
 
-Well, it was already private: any IAM application/user within the project could read the bucket.
+It was already private: any IAM application/user within the project could read the bucket.
 
 It would be nice if someone could axplan what 'with the `acl` field filled accordingly' actually means.
