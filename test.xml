@@ -1,0 +1,38 @@
+<AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <AccessControlList>
+        <Grant>
+            <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+                <ID>8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192</ID>
+            </Grantee>
+            <Permission>FULL_CONTROL</Permission>
+        </Grant>
+        <Grant>
+            <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+                <ID>8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192</ID>
+            </Grantee>
+            <Permission>WRITE</Permission>
+        </Grant>
+        <Grant>
+            <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+                <ID>8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192</ID>
+            </Grantee>
+            <Permission>READ_ACP</Permission>
+        </Grant>
+        <Grant>
+            <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:type="CanonicalUser">
+                <ID>8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192</ID>
+            </Grantee>
+            <Permission>WRITE_ACP</Permission>
+        </Grant>
+        <Grant>
+            <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+                <ID>8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192</ID>
+            </Grantee>
+            <Permission>READ</Permission>
+        </Grant>
+    </AccessControlList>
+    <Owner>
+        <ID>8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192</ID>
+    </Owner>
+</AccessControlPolicy>

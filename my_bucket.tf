@@ -59,22 +59,59 @@ resource "scaleway_object_bucket" "test-bucket-acl" {
 # aws s3 ls s3://test-bucket-acl
 # => An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
 
-# resource "scaleway_object_bucket_acl" "my-test-bucket" {
-#   bucket = scaleway_object_bucket.test-bucket-acl.id
-#   access_control_policy {
-#     grant {
-#       grantee {
-#         id   = "8208f6a4-08d6-4e59-bd40-770b45ff4192"
-#         type = "CanonicalUser"
-#       }
-#       permission = "FULL_CONTROL"
-#     }
-#     owner {
-#       # id = data.scaleway_account_project.default.id
-#       id = "8208f6a4-08d6-4e59-bd40-770b45ff4192"
-#     }
-#   }
-# }
+# Run tofu plan again, it complains:
+#  Warning: Cannot read bucket objects: Forbidden
+#│
+#│   with scaleway_object_bucket.test-bucket-acl,
+#│   on my_bucket.tf line 10, in resource "scaleway_object_bucket" "test-bucket-acl":
+#│   10: resource "scaleway_object_bucket" "test-bucket-acl" {
+#│
+#│ Got 403 error while reading bucket objects, please check your IAM permissions and your bucket policy
+
+resource "scaleway_object_bucket_acl" "my-test-bucket" {
+  bucket = scaleway_object_bucket.test-bucket-acl.id
+  access_control_policy {
+    grant {
+      grantee {
+        id   = "8208f6a4-08d6-4e59-bd40-770b45ff4192"
+        type = "CanonicalUser"
+      }
+      permission = "FULL_CONTROL"
+    }
+    grant {
+      grantee {
+        id   = "8208f6a4-08d6-4e59-bd40-770b45ff4192"
+        type = "CanonicalUser"
+      }
+      permission = "READ_ACP"
+    }
+    grant {
+      grantee {
+        id   = "8208f6a4-08d6-4e59-bd40-770b45ff4192"
+        type = "CanonicalUser"
+      }
+      permission = "WRITE_ACP"
+    }
+    grant {
+      grantee {
+        id   = "8208f6a4-08d6-4e59-bd40-770b45ff4192"
+        type = "CanonicalUser"
+      }
+      permission = "READ"
+    }
+    grant {
+      grantee {
+        id   = "8208f6a4-08d6-4e59-bd40-770b45ff4192"
+        type = "CanonicalUser"
+      }
+      permission = "WRITE"
+    }
+    owner {
+      # id = data.scaleway_account_project.default.id
+      id = "2f03da12-1e45-42fa-894d-fd4ce195fb09"
+    }
+  }
+}
 
 # This what the CLI says after doing scw object  bucket update test-bucket-acl acl=private
 

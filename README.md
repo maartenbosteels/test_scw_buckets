@@ -111,7 +111,9 @@ GRANTEE                               PERMISSION
 
 But this is not what we want: now all users can read the bucket.
 
-## now we remoce the acl from the terraform config and try again
+## now we remove the acl from the terraform config and try again
+
+
 
 ```
 ╷

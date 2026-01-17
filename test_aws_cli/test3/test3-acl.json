@@ -1,0 +1,28 @@
+{
+    "Owner": {
+        "ID": "2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09"
+    },
+    "Grants": [
+        {
+            "Grantee": {
+                "ID": "8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "FULL_CONTROL"
+        },
+        {
+            "Grantee": {
+                "ID": "8208f6a4-08d6-4e59-bd40-770b45ff4192:8208f6a4-08d6-4e59-bd40-770b45ff4192",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "READ"
+        },
+        {
+            "Grantee": {
+                "ID": "f0b04611-58d1-4bff-add7-527b944e29ba:f0b04611-58d1-4bff-add7-527b944e29ba",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "FULL_CONTROL"
+        }
+    ]
+}
