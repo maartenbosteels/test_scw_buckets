@@ -1,0 +1,11 @@
+✅ Success.
+ID                test-bucket-acl
+Region            fr-par
+APIEndpoint       https://s3.fr-par.scw.cloud
+BucketEndpoint    https://test-bucket-acl.s3.fr-par.scw.cloud
+EnableVersioning  false
+Owner             2f03da12-1e45-42fa-894d-fd4ce195fb09
+
+Acl:
+GRANTEE                               PERMISSION
+2f03da12-1e45-42fa-894d-fd4ce195fb09  FULL_CONTROL

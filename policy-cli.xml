@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <Owner>
+        <DisplayName>2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09</DisplayName>
+        <ID>2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09</ID>
+    </Owner>
+    <AccessControlList>
+        <Grant>
+            <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+                <ID>2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09</ID>
+                <DisplayName>2f03da12-1e45-42fa-894d-fd4ce195fb09:2f03da12-1e45-42fa-894d-fd4ce195fb09</DisplayName>
+            </Grantee>
+            <Permission>FULL_CONTROL</Permission>
+        </Grant>
+    </AccessControlList>
+</AccessControlPolicy>
